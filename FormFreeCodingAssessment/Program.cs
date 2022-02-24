@@ -1,4 +1,5 @@
 ﻿using TriangleTypeLibrary;
+using LinkedListLibrary;
 
 namespace FormFreeCodingAssessment
 {
@@ -6,16 +7,19 @@ namespace FormFreeCodingAssessment
     {
         static void Main(string[] args)
         {
+            int[] longList = new int[10000];
+            for (int i = 0; i < 10000; i++)
+            {
+                longList[i] = i;
+            }
+            LinkedListLibrary.LinkedList<int> myIntLinkedList = new LinkedListLibrary.LinkedList<int>(longList);
+            Console.WriteLine(myIntLinkedList.GetFifthLastElement());
+
             Creator c = new Creator();
-            try
-            {
-                ITriangle myTriangle = c.FactoryMethod(2,2,2);
-                Console.WriteLine(myTriangle.GetTriangleType());
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            ITriangle myTriangle = c.FactoryMethod(3, 3, 3);
+            Console.WriteLine(myTriangle.GetTriangleType());
+
         }
+
     }
 }

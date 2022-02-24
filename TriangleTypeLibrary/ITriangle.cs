@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TriangleTypeLibrary
 {
+    /// <summary>
+    /// Interface for base triangle class.
+    /// </summary>
     public interface ITriangle
     {
         string GetTriangleType();

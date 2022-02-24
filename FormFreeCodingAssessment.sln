@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleTypeLibrary", "Tria
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{EC767DFC-FB6A-4B6E-9EA2-3B1F388C8086}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListLibrary", "LinkedListLibrary\LinkedListLibrary.csproj", "{49531301-2C9A-4C27-B57C-5A3F2D0A867A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EC767DFC-FB6A-4B6E-9EA2-3B1F388C8086}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC767DFC-FB6A-4B6E-9EA2-3B1F388C8086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC767DFC-FB6A-4B6E-9EA2-3B1F388C8086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

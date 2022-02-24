@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LinkedListLibrary\LinkedListLibrary.csproj" />
     <ProjectReference Include="..\TriangleTypeLibrary\TriangleTypeLibrary.csproj" />
   </ItemGroup>
 

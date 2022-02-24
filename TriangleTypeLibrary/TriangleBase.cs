@@ -8,7 +8,13 @@ namespace TriangleTypeLibrary
 {
     class TriangleBase : ITriangle
     {
-        public int a, b, c;
+        // Protected To be accessible in children.
+        protected int a, b, c;
+        
+        /// <summary>
+        /// Construct a triangle using three integers representing
+        /// three sides.
+        /// </summary>
         public TriangleBase(int a, int b, int c)
         {
             this.a = a;
@@ -16,6 +22,10 @@ namespace TriangleTypeLibrary
             this.c = c;
         }
 
+        /// <summary>
+        /// Get the type of the triangle - overridden in children.
+        /// </summary>
+        /// <returns>String representation of triangle type</returns>
         public virtual string GetTriangleType()
         {
             return "Generic Triangle";

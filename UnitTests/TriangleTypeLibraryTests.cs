@@ -9,7 +9,7 @@ namespace UnitTests
         Creator c = new Creator();
 
         [Fact]
-        public void ValidEquilateral()
+        public void ValidEquilateralTest()
         {
             string expected = "Equilateral";
             ITriangle myTriangle = c.FactoryMethod(2, 2, 2);
@@ -17,7 +17,7 @@ namespace UnitTests
             Assert.Equal(expected, actual);
         }
         [Fact]
-        public void ValidIsosceles()
+        public void ValidIsoscelesTest()
         {
             string expected = "Isosceles";
             ITriangle myTriangle = c.FactoryMethod(4, 4, 6);
@@ -25,7 +25,7 @@ namespace UnitTests
             Assert.Equal(expected, actual);
         }
         [Fact]
-        public void ValidScalene()
+        public void ValidScaleneTest()
         {
             string expected = "Scalene";
             ITriangle myTriangle = c.FactoryMethod(10, 11, 12);
@@ -33,19 +33,19 @@ namespace UnitTests
             Assert.Equal(expected, actual);
         }
         [Fact]
-        public void InvalidTriangle()
+        public void InvalidTriangleTest()
         {
             ITriangle myTriangle;
             Assert.Throws<ArgumentException>(() => myTriangle = c.FactoryMethod(10, 100, 3));
         }
         [Fact]
-        public void InvalidTriangleNegativeSide()
+        public void InvalidTriangleNegativeSideTest()
         {
             ITriangle myTriangle;
             Assert.Throws<ArgumentException>(() => myTriangle = c.FactoryMethod(4, -4, 6));
         }
         [Fact]
-        public void InvalidTriangleZeroSide()
+        public void InvalidTriangleZeroSideTest()
         {
             ITriangle myTriangle;
             Assert.Throws<ArgumentException>(() => myTriangle = c.FactoryMethod(0, 0, 0));
