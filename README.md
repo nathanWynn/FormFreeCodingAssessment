@@ -132,7 +132,7 @@ on the Orders table with no knowledge of the relevant customers would likely be 
 uncommon operation. Additionally, performing queries on the Customers table would
 most likely require some knowledge of what orders they’ve placed (e.g. “Find the
 emails for customers with an order amount > X in order to send them a thank you
-message”)  Adding indexes to many columns would increase insert time, and for
+message”).  Adding indexes to many columns would increase insert time, and for
 columns whose uniqueness is irrelevant, an index would not be as useful.
 
 5. Write a query that lists each customer name, email, and the number of orders
