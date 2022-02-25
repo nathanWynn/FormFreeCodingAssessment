@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormFreeCodingAssessment", "FormFreeCodingAssessment\FormFreeCodingAssessment.csproj", "{21CFB565-6422-4D39-AE27-E797699D339F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormFreeCodingAssessment", "FormFreeCodingAssessment\FormFreeCodingAssessment.csproj", "{21CFB565-6422-4D39-AE27-E797699D339F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleTypeLibrary", "TriangleTypeLibrary\TriangleTypeLibrary.csproj", "{FE6A34AC-2683-4C24-9967-634E726545DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriangleTypeLibrary", "TriangleTypeLibrary\TriangleTypeLibrary.csproj", "{FE6A34AC-2683-4C24-9967-634E726545DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{EC767DFC-FB6A-4B6E-9EA2-3B1F388C8086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{EC767DFC-FB6A-4B6E-9EA2-3B1F388C8086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListLibrary", "LinkedListLibrary\LinkedListLibrary.csproj", "{49531301-2C9A-4C27-B57C-5A3F2D0A867A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListLibrary", "LinkedListLibrary\LinkedListLibrary.csproj", "{49531301-2C9A-4C27-B57C-5A3F2D0A867A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactorizationLibrary", "PrimeFactorizationLibrary\PrimeFactorizationLibrary.csproj", "{D97AE758-6026-48CF-AA78-552823936ABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49531301-2C9A-4C27-B57C-5A3F2D0A867A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97AE758-6026-48CF-AA78-552823936ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97AE758-6026-48CF-AA78-552823936ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97AE758-6026-48CF-AA78-552823936ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97AE758-6026-48CF-AA78-552823936ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
