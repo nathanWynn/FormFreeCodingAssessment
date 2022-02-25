@@ -18,7 +18,7 @@ namespace UnitTests
             expected.Add(new List<int> { 2, 2, 2, 2, 2, 5, 5, 5, 5, 5 });
             expected.Add(new List<int> { 3, 3, 3607, 3803 });            
 
-            List<List<int>> actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles\ValidPrimeFactorizationTest.txt");
+            List<List<int>> actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles/ValidPrimeFactorizationTest.txt");
             Console.WriteLine(actual);
             Assert.Equal(expected, actual);
         }
@@ -34,21 +34,21 @@ namespace UnitTests
         public void FileNotFoundTest()
         {
             List<List<int>> actual;
-            Assert.Throws<FileNotFoundException>(() => actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles\DoesNotExist.txt"));
+            Assert.Throws<FileNotFoundException>(() => actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles/DoesNotExist.txt"));
         }
 
         [Fact]
         public void InvalidFileTypeTest()
         {
             List<List<int>> actual;
-            Assert.Throws<ArgumentException>(() => actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles\WrongFile.csv"));
+            Assert.Throws<ArgumentException>(() => actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles/WrongFile.csv"));
         }
 
         [Fact]
         public void NegativeNumberTest()
         {
             List<List<int>> actual;
-            Assert.Throws<ArgumentException>(() => actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles\InvalidTestWithNegatives.txt"));
+            Assert.Throws<ArgumentException>(() => actual = PrimeFactorDocumentUtils.GetFactorizations(@"TestFiles/InvalidTestWithNegatives.txt"));
         }
     }
 }

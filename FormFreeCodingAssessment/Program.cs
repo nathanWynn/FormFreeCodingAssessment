@@ -30,7 +30,7 @@ namespace FormFreeCodingAssessment
             /*
              * PrimeFactorizationLibrary Usage:
              */
-            List<List<int>> myList = PrimeFactorDocumentUtils.GetFactorizations(@"data\FactorizeMe.txt");
+            List<List<int>> myList = PrimeFactorDocumentUtils.GetFactorizations(@"data/FactorizeMe.txt");
             foreach(List<int> primeFactors in myList)
             {
                 Console.WriteLine(string.Join(", ", primeFactors));
